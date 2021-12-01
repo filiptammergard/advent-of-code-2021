@@ -1,7 +1,6 @@
-const day = "01";
-
+const day = /\/(\d{2}).ts$/.exec(import.meta.url)?.[1];
 const decoder = new TextDecoder("utf-8");
-const input = await Deno.readFile(`day${day}/input.txt`);
+const input = await Deno.readFile(`${day}.txt`);
 const data = decoder.decode(input);
 
 console.log(`
