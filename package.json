@@ -1,0 +1,29 @@
+{
+  "name": "advent-of-code-2021",
+  "version": "1.0.0",
+  "description": "My solutions to the AoC 2021 problems in TypeScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filiptammergard/advent-of-code-2021.git"
+  },
+  "keywords": [
+    "advent",
+    "of",
+    "code",
+    "aoc"
+  ],
+  "author": "Filip Tammergård",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/filiptammergard/advent-of-code-2021/issues"
+  },
+  "homepage": "https://github.com/filiptammergard/advent-of-code-2021#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "typescript": "^4.5.2"
+  }
+}
