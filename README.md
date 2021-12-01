@@ -1,3 +1,3 @@
-# Advent of Code 2021 TypeScript
+# Advent of Code 2021
 
-My solutions to the AoC 2021 problems in TypeScript.
+My Advent of Code 2021 solutions in Deno.
