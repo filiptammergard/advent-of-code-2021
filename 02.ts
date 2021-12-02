@@ -1,15 +1,5 @@
-const day = /\/(\d{2}).ts$/.exec(import.meta.url)?.[1];
-const decoder = new TextDecoder("utf-8");
-const input = await Deno.readFile(`${day}.txt`);
-const data = decoder.decode(input);
-
-console.log(`
-Part one answer: ${partOne()}
-Part two answer: ${partTwo()}
-`);
-
-function partOne() {
-  const steps = data.split("\n").map((step) => ({
+export function partOne(input: string) {
+  const steps = input.split("\n").map((step) => ({
     direction: step.split(" ")[0],
     value: parseInt(step.split(" ")[1], 10),
   }));
@@ -30,8 +20,8 @@ function partOne() {
   return horizontalPosition * depth;
 }
 
-function partTwo() {
-  const steps = data.split("\n").map((step) => ({
+export function partTwo(input: string) {
+  const steps = input.split("\n").map((step) => ({
     direction: step.split(" ")[0],
     value: parseInt(step.split(" ")[1], 10),
   }));

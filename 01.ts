@@ -1,15 +1,5 @@
-const day = /\/(\d{2}).ts$/.exec(import.meta.url)?.[1];
-const decoder = new TextDecoder("utf-8");
-const input = await Deno.readFile(`${day}.txt`);
-const data = decoder.decode(input);
-
-console.log(`
-Part one answer: ${partOne()}
-Part two answer: ${partTwo()}
-`);
-
-function partOne() {
-  const measurements = data
+export function partOne(input: string) {
+  const measurements = input
     .split("\n")
     .map((measurement) => parseInt(measurement, 10));
 
@@ -23,8 +13,8 @@ function partOne() {
   return count;
 }
 
-function partTwo() {
-  const measurements = data
+export function partTwo(input: string) {
+  const measurements = input
     .split("\n")
     .map((measurement) => parseInt(measurement, 10));
 
