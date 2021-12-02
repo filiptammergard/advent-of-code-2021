@@ -1,6 +1,6 @@
 # Advent of Code 2021
 
-My Advent of Code 2021 solutions in Deno.
+My Advent of Code 2021 solutions in TypeScript.
 
 Get answers by running `deno run --allow-read XX.ts`, where `XX` is `01` for day 1.
 
