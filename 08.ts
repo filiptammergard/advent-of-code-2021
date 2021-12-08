@@ -14,7 +14,7 @@ export function partOne(input: string) {
 }
 
 export function partTwo(input: string) {
-  const data = input.split("\n").map((output) =>
+  const signals = input.split("\n").map((output) =>
     output
       .split(" | ")[0]
       .split(" ")
@@ -30,7 +30,7 @@ export function partTwo(input: string) {
   const numbers: string[][] | undefined[] = [...Array(10)];
   const segments = [...Array(7)];
 
-  return data.reduce((acc, curr, index) => {
+  return signals.reduce((acc, curr, index) => {
     numbers[1] = curr.find((value) => value.length === 2);
     numbers[4] = curr.find((value) => value.length === 4);
     numbers[7] = curr.find((value) => value.length === 3);
